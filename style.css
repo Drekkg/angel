@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(37, 29, 48);
+    color: white;
+}
+img {
+    display: block;
+    max-width: 35%;
+    margin: 0px auto;
+    padding-bottom: 5rem;
+}
+
+
+.heading {
+    font-family: "Playfair Display", serif;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+    img {
+        max-width: 60%;}
+    
+}
