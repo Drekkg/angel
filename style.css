@@ -9,6 +9,10 @@ img {
     margin: 0px auto;
     padding-bottom: 5rem;
 }
+p { 
+    text-align: center;
+    padding-top: 7rem;
+}
 
 
 .heading {
