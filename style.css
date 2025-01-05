@@ -23,12 +23,18 @@ img {
     display: block;
     margin: 0 auto;
     padding: 2rem;
-    text-align: center;
+   text-align: center;
+
+    
+    
 }
 
 
 @media (min-width: 300px) and (max-width: 768px) {
     img {
         max-width: 90%;}
+        .audio {
+            padding: 1rem;
+        }
     
 }
