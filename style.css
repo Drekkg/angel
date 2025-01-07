@@ -28,9 +28,36 @@ p {
     margin: 0 auto;
     padding: 2rem;
    text-align: center;
+}
 
-    
-    
+.bio-text {
+    padding: 2rem;
+    text-align: center;
+}
+
+.music-link {
+    color: white;
+    text-decoration: none;
+    background-color: slategrey;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(37, 29, 48);
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+      }
+i {
+    font-size: 1.6rem;
+}
+
+.copyright-text {
+    font-size: .8rem;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
 }
 
 
