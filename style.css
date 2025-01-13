@@ -61,6 +61,21 @@ i {
 }
 
 
+
+ img {
+    padding: 3px;
+    border: 2px solid black;
+    background-color: rgb(28, 26, 56);
+    border-radius: 15px;
+  }
+  #photos {
+    line-height: 0;
+  }
+
+  #photos > p {
+    font-size: 1.6rem;
+    padding: 2rem;
+  }
 @media (min-width: 300px) and (max-width: 768px) {
     img {
         max-width: 90%;}
