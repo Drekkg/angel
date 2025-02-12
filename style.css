@@ -56,7 +56,11 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 1rem;
+   
       }
+
+.clear { clear: both; height: 8rem; }
+
 i {
     font-size: 1.6rem;
 }
