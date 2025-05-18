@@ -3,6 +3,10 @@
     background-color: rgb(37, 29, 48);
     color: white;
 }
+body {
+
+    background-image: url('../assets/images/mountain-1.jpeg');
+}
 
 img {
     display: block;
@@ -18,10 +22,11 @@ p {
 .main {
     /* make main element take up any surplus space and push the footer down */
     flex: 1 0 auto;
-  
+    
     display: flex;
     flex-direction: column;
   }
+
 .heading {
     font-family: "Playfair Display", serif;
     font-weight: bolder;
