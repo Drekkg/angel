@@ -3,10 +3,7 @@
     background-color: rgb(37, 29, 48);
     color: white;
 }
-body {
 
-    background-image: url('../assets/images/mountain-1.jpeg');
-}
 
 img {
     display: block;
@@ -15,8 +12,10 @@ img {
     padding-bottom: 5rem;
 }
 p { 
-    text-align: center;
-    padding-top: 7rem;
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 2rem;
+   
 }
 
 .main {
