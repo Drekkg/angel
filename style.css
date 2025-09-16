@@ -12,9 +12,11 @@ img {
     padding-bottom: 5rem;
 }
 p { 
+    margin: 0;
     text-align: left;
     padding-left: 2rem;
     padding-top: 2rem;
+    margin-bottom: 0px !important;
    
 }
 
@@ -142,6 +144,9 @@ i {
      text-decoration: none;
      color: #161515;
      font-size: 1rem;
+   }
+   h1 {
+    margin-bottom: 0px !important;
    }
    
 
