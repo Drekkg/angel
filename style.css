@@ -11,8 +11,8 @@ img {
     margin: 0px auto;
     padding-bottom: 5rem;
 }
-p { 
-    margin: 0;
+.pargraph { 
+    margin-left: 12px;
     text-align: left;
     padding-left: 2rem;
     padding-top: 2rem;
@@ -145,9 +145,24 @@ i {
      color: #161515;
      font-size: 1rem;
    }
-   h1 {
+   h1,h2,h3  {
+    color: #ffffff !important;
     margin-bottom: 0px !important;
+    text-align: center;
    }
+   .chord-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #161515 !important;
+   }
+   .chord {
+    display: inline-block;
+    width: 10rem; 
+    text-align: center;
+  }
    
 
 
