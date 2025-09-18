@@ -11,14 +11,7 @@ img {
     margin: 0px auto;
     padding-bottom: 5rem;
 }
-.pargraph { 
-    margin-left: 12px;
-    text-align: left;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    margin-bottom: 0px !important;
-   
-}
+
 
 .main {
     /* make main element take up any surplus space and push the footer down */
@@ -156,15 +149,41 @@ i {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
-    background-color: #161515 !important;
+    border: solid white 2px;
+    padding-left: .3rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+   
    }
    .chord {
     display: inline-block;
     width: 10rem; 
     text-align: center;
+    
   }
+  .song_main { 
+    margin: auto;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 0px !important;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
    
+}
+.song_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
+.songlist_button {
+  text-decoration: none;
+  background-color: #ffffff;
+  color:#161515;
+  padding: 4px;
+  border-radius: 6px;
+
+}
 
 @media (min-width: 300px) and (max-width: 768px) {
     img {
