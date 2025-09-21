@@ -148,7 +148,7 @@ i {
     gap: 1rem;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   
     padding-left: .3rem;
     margin-bottom: .5rem;
