@@ -61,6 +61,7 @@ img {
   padding: 2rem 1rem .5rem 1rem;
 }
 .audio {
+
     display: block;
     margin: 0 auto;
     padding: 2rem;
@@ -196,6 +197,7 @@ i {
     text-align: left;
     line-height: 1;
    }
+
    .chord-container {
     display: flex;
     /* gap: 1rem; */
