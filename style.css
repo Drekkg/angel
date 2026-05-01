@@ -1,13 +1,26 @@
+
+:root {
+  /* Colors from your previous configuration */
+  --primary: #ffb3ac;
+  --primary-container: #7b1113;
+  --on-primary-container: #ff837a;
+  --background: #131313;
+  --on-background: #e5e2e1;
+  --surface: #131313;
+  --tertiary: #d4c5a8;
+  --outline-variant: #58413f;
+}
 * {
     box-sizing: border-box;
-    background-color: rgb(37, 29, 48);
+    background-color: #131313;
     color: white;
 }
 
 
+
 img {
     display: block;
-    max-width: 35%;
+    max-width: 65%;
     margin: 0px auto;
     padding-bottom: 5rem;
 }
@@ -22,12 +35,30 @@ img {
   }
 
 .heading {
-    font-family: "Playfair Display", serif;
-    font-weight: bolder;
-    color: white;
+  font-family: "Newsreader", serif;
+  font-size: 2rem;
+    color: rgb(219, 201, 201);
     margin-bottom: 0;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+}
+.heading2 {
+  color: #f0e1c2 !important;
+  font-family: "Newsreader", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 2rem 1rem .5rem 1rem;
+}
+.heading3 {
+  color: #f0e1c2 !important;
+  font-family: "Newsreader", serif;
+  font-size: 1.9rem;
+  font-style: italic;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 2rem 1rem .5rem 1rem;
 }
 .audio {
     display: block;
@@ -51,7 +82,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgb(37, 29, 48);
     height: 3rem;
     display: flex;
     justify-content: space-around;
@@ -77,7 +107,23 @@ i {
     padding: 3px;
     border: 2px solid black;
     background-color: rgb(28, 26, 56);
+    border-radius: 15px; 
+  }
+
+  .hero-overlay {
+
+    inset: 0;
+    background: linear-gradient(to top, var(--background) 5%, transparent 60%),
+                linear-gradient(to right, rgba(19,19,19,0.8), transparent);
+    filter: grayscale(70%) brightness(0.8);
+}
+  .logo-style { 
+    padding: 3px;
+    border: 2px solid black;
+    background-color: rgb(28, 26, 56);
     border-radius: 15px;
+    height: 8rem;
+    width: 8rem;
   }
   #photos {
     line-height: 0;
@@ -86,6 +132,7 @@ i {
   #photos > p {
     font-size: 1.6rem;
     padding: 4rem 2rem 0 2rem;
+    text-align: center;
    
   }
 
@@ -141,23 +188,34 @@ i {
    h1,h2,h3  {
     color: #ffffff !important;
     margin-bottom: 0px !important;
-    text-align: center;
+    text-align: left;
+    line-height: 1;
    }
    .chord-container {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: left;
     flex-wrap: wrap;
-  
     padding-left: .3rem;
     margin-bottom: .5rem;
     margin-top: .5rem;
-   
    }
+   .lyric-block {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    
+
+   }
+
+
+
    .chord {
     display: inline-block;
-    width: 10rem; 
+    width: 5rem; 
     text-align: center;
     
   }

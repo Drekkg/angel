@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,700;6..72,800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#ffdad6",
+                    "surface-container-high": "#2a2a2a",
+                    "tertiary-fixed-dim": "#d4c5a8",
+                    "on-background": "#e5e2e1",
+                    "on-primary-fixed-variant": "#891c1b",
+                    "primary": "#ffb3ac",
+                    "on-tertiary": "#382f1b",
+                    "on-primary": "#680108",
+                    "on-secondary-container": "#b6b5b4",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-surface-variant": "#dfbfbc",
+                    "primary-container": "#7b1113",
+                    "inverse-on-surface": "#313030",
+                    "error-container": "#93000a",
+                    "surface-bright": "#3a3939",
+                    "background": "#131313",
+                    "secondary-container": "#474747",
+                    "on-error": "#690005",
+                    "surface-container-highest": "#353534",
+                    "on-secondary": "#303030",
+                    "surface": "#131313",
+                    "surface-tint": "#ffb3ac",
+                    "outline": "#a78a87",
+                    "tertiary-fixed": "#f0e1c2",
+                    "on-tertiary-fixed": "#221b08",
+                    "inverse-primary": "#aa3530",
+                    "surface-variant": "#353534",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#474747",
+                    "primary-fixed-dim": "#ffb3ac",
+                    "on-tertiary-fixed-variant": "#4f462f",
+                    "surface-container": "#201f1f",
+                    "inverse-surface": "#e5e2e1",
+                    "error": "#ffb4ab",
+                    "surface-dim": "#131313",
+                    "tertiary-container": "#453c26",
+                    "on-surface": "#e5e2e1",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-container": "#b4a68a",
+                    "tertiary": "#d4c5a8",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "outline-variant": "#58413f",
+                    "secondary": "#c8c6c6",
+                    "on-primary-container": "#ff837a",
+                    "on-primary-fixed": "#410003",
+                    "secondary-fixed": "#e4e2e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Work Sans", "sans-serif"],
+                    "label": ["Work Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 179, 172, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Navigation -->
+<header class="fixed top-0 w-full z-50 bg-[#131313] flex justify-between items-center px-6 h-20 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#ffb3ac] cursor-pointer" data-icon="menu">menu</span>
+<h1 class="text-2xl font-black text-[#e5e2e1] tracking-widest">ANGEL &amp; THE DEAD COWBOYS</h1>
+</div>
+<nav class="hidden md:flex gap-8 items-center font-serif text-sm uppercase tracking-widest">
+<a class="text-[#ffb3ac] border-b-2 border-[#7b1113] transition-colors duration-300" href="#">The Ledger</a>
+<a class="text-[#c8c6c6] hover:text-[#ffb3ac] transition-colors duration-300" href="#">Hymnals</a>
+<a class="text-[#c8c6c6] hover:text-[#ffb3ac] transition-colors duration-300" href="#">The Trail</a>
+<a class="text-[#c8c6c6] hover:text-[#ffb3ac] transition-colors duration-300" href="#">The Souls</a>
+</nav>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#ffb3ac]" data-icon="skull">skull</span>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[1105px] w-full flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Band Portrait" class="w-full h-full object-cover grayscale opacity-90 brightness-90" data-alt="portrait of the Angel and the Dead Cowboys" src="assets/images/poster.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-1 px-6 md:px-12 pb-24 max-w-5xl">
+<p class="font-serif italic text-tertiary-fixed text-xl md:text-2xl mb-4 tracking-wide opacity-80">A testament to the forgotten.</p>
+<h2 class="font-headline font-extrabold text-7xl md:text-9xl leading-[0.85] tracking-tighter text-on-background uppercase mb-8">
+                    The Gospel <br/><span class="text-primary">of the Dust</span>
+</h2>
+<div class="flex flex-col md:flex-row gap-6">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 font-label font-bold uppercase tracking-widest hover:bg-primary transition-colors duration-300">
+                        Witness the Tour
+                    </button>
+<button class="border border-outline-variant text-tertiary px-10 py-4 font-label font-bold uppercase tracking-widest hover:bg-surface-container transition-colors duration-300">
+                        Enter the Archive
+                    </button>
+</div>
+</div>
+</section>
+<!-- News Ticker -->
+<section class="bg-surface-container-lowest border-y border-outline-variant/10 py-4 overflow-hidden whitespace-nowrap">
+<div class="inline-block animate-marquee">
+<span class="font-label text-xs tracking-[0.3em] uppercase text-primary mx-8">NEW SINGLE "ASHES OF ABILENE" OUT NOW</span>
+<span class="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mx-8">★</span>
+<span class="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mx-8">LIMITED EDITION OXBLOOD VINYL PRE-ORDER OPEN</span>
+<span class="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mx-8">★</span>
+<span class="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mx-8">EUROPEAN WINTER DATES ANNOUNCED</span>
+<span class="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mx-8">★</span>
+<span class="font-label text-xs tracking-[0.3em] uppercase text-primary mx-8">NEW SINGLE "ASHES OF ABILENE" OUT NOW</span>
+</div>
+<style>
+                @keyframes marquee {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); }
+                }
+                .animate-marquee {
+                    animation: marquee 30s linear infinite;
+                    display: inline-block;
+                }
+            </style>
+</section>
+<!-- Featured Single Section -->
+<section class="py-24 px-6 md:px-12 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative aspect-square bg-surface-container shadow-2xl">
+<img alt="Album Art" class="w-full h-full object-cover grayscale mix-blend-luminosity" data-alt="Minimalist album cover art featuring a lone weathered acoustic guitar leaning against a charred wooden barn wall, high contrast black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL8a7XtjUs_6s7_-ZS5_zdL14an8MMCUdZvj-dC8mzmARBjb02ZbE7dj2LyZkga5aUSM4Oc0KkFT1iUEbKI16gGaetRruLmJWeeSI3PsKfw8Q1vZ1utjuktv5oHP4kV9jhBJOVdjNq7M51SYP7_qOQKuCQVbL7rcXW-Ay0GFbaOMX50SU1q8VHWFyjw18FsOh5j6euzniGnYbW36IocPrL_rR5yNFeaNueWnFuwtlEBJCMPfEFUOHTWObpSGNlI7uAf6mySZc0U4Uj"/>
+<div class="absolute inset-0 bg-primary-container/10"></div>
+</div>
+<div class="md:col-span-7 flex flex-col items-start">
+<div class="bg-tertiary-container text-on-tertiary-container px-3 py-1 mb-6">
+<span class="text-[10px] font-label font-bold uppercase tracking-widest">New Revelation</span>
+</div>
+<h3 class="font-headline text-5xl md:text-7xl font-bold text-on-background mb-4">Ashes of Abilene</h3>
+<p class="font-body text-secondary text-lg max-w-xl mb-10 leading-relaxed">
+                        A haunting ballad of the southern plains, recorded in a deconsecrated chapel during the height of the summer heat. The first chapter of our upcoming ledger, <em class="text-tertiary">The Great Forgetting</em>.
+                    </p>
+<div class="w-full bg-surface-container-low p-8 flex items-center gap-6 group cursor-pointer hover:bg-surface-container transition-colors">
+<div class="h-16 w-16 bg-primary-container flex items-center justify-center group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<div class="flex-1">
+<div class="h-1 bg-outline-variant w-full mb-2">
+<div class="h-1 bg-primary w-1/3"></div>
+</div>
+<div class="flex justify-between font-label text-[10px] uppercase tracking-tighter text-on-surface-variant">
+<span>01:42</span>
+<span>04:55</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="volume_up">volume_up</span>
+</div>
+<div class="mt-8 flex gap-8">
+<a class="font-label text-xs uppercase tracking-[0.2em] text-tertiary hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="library_music">library_music</span> Listen on the Wire
+                        </a>
+<a class="font-label text-xs uppercase tracking-[0.2em] text-tertiary hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="shopping_bag">shopping_bag</span> Order the Wax
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric News/Story Grid -->
+<section class="py-24 px-6 md:px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h4 class="font-headline text-4xl font-bold uppercase tracking-tight">Recent Scrawls</h4>
+<a class="font-label text-xs uppercase tracking-[0.2em] text-primary border-b border-primary/30 pb-1" href="#">View All Entries</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Article 1 -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-surface mb-6 grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden">
+<img alt="Studio" class="w-full h-full object-cover" data-alt="Close up of a vintage recording microphone in a dark studio with warm amber mood lighting and dust motes in the air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeGpyMC12S-gpZI5p2ToyiDjd2vjhB-pJxq1MyJ893XE0vAQHSxf1f6xWRKddcS7fkHzpRrvTy6Q1rk0gjraDvfSWyceD_hTX1UbR7HcZ3M0Ya3H-rWOM-EZlmU1LYuv6SEijn_bpPBRo7qeZgbBiXUQwyuVrvZiAhSu03LQ_FNJRoQGyrplzDafI4iW524jY6mJ6XOhgzNoQaD6WyTQ_TnYdGZJzWUypabnmtgtrC-ZCZO7Z0k5XcyFTFFTdH40zxOzHJjFAAlEpZ"/>
+</div>
+<span class="font-label text-[10px] text-primary mb-2 uppercase tracking-widest">October 14, 1884</span>
+<h5 class="font-headline text-2xl font-bold mb-3">Notes from the Void: The Recording Process</h5>
+<p class="font-body text-secondary text-sm leading-relaxed mb-6">Capturing the resonance of dry timber and hollow steel...</p>
+<a class="mt-auto font-label text-[10px] uppercase tracking-widest text-on-surface hover:text-tertiary transition-colors" href="#">Read More</a>
+</div>
+<!-- Article 2 -->
+<div class="flex flex-col md:mt-12">
+<div class="aspect-[4/5] bg-surface mb-6 grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden">
+<img alt="The Trail" class="w-full h-full object-cover" data-alt="Long exposure shot of a lonely desert road at night under a starry sky with a faint red glow on the horizon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4-ti8obo-z08OJvu3IPWQG3-GrxSm2WuY6eQdMmTQk_JUmq-qKqeBv_1lBc20ZiK8NouMgANb07OmJAVMCJHPv-uSjw5SVRkOIdHJtSGPavm4JgB-Px0YKHK0rJNUNmSEHfukpJCPAxiK6HO8kkbP9RHkCe3LntncSK43-BL-jxBSvo0YlrewQqsR3LCGVr-4c-R9CYHA3ZsPYadqaCvjEvlIui1rqj_S81olgsX35EhMspAH19iy7NLtiu_Jg8eGsLhhvqQ5BXci"/>
+</div>
+<span class="font-label text-[10px] text-primary mb-2 uppercase tracking-widest">September 29, 1884</span>
+<h5 class="font-headline text-2xl font-bold mb-3">The Trail Ahead: Winter Tour Dates</h5>
+<p class="font-body text-secondary text-sm leading-relaxed mb-6">Where the dust settles, we shall sing. Full schedule inside.</p>
+<a class="mt-auto font-label text-[10px] uppercase tracking-widest text-on-surface hover:text-tertiary transition-colors" href="#">Read More</a>
+</div>
+<!-- Article 3 -->
+<div class="flex flex-col md:mt-24">
+<div class="aspect-[4/5] bg-surface mb-6 grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden">
+<img alt="Crowd" class="w-full h-full object-cover" data-alt="Silhouetted crowd in a small smoky bar with bright stage lights creating a halo effect around the performers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOSrH4yqoOCBvRXM7dBmCAntocqrbDHYzhWao5KsSeh7I3zz6ARQwLDdofY97-6oM7y85IdZdiwAvxy1z0JHaEy2EzMBwSAd0HzJvqK8yDEFbEQ5Fi-eb08CYo42H5EXFb8AKidK7ohimwss-Jvb5Ml3qN0fy4eGdUeA7a3MaLjjOVKnhs-ErZVKThWbYpUptsa4ppbe8laa3DPBXuOcbnocw-0oIrtEHgvwDCt_xxHyftaNo4yvHuR4NeP0EKZ1j4hmHfYB9UzoQ5"/>
+</div>
+<span class="font-label text-[10px] text-primary mb-2 uppercase tracking-widest">August 12, 1884</span>
+<h5 class="font-headline text-2xl font-bold mb-3">A Night at The Broken Spur</h5>
+<p class="font-body text-secondary text-sm leading-relaxed mb-6">A gathering of souls in the heart of the badlands.</p>
+<a class="mt-auto font-label text-[10px] uppercase tracking-widest text-on-surface hover:text-tertiary transition-colors" href="#">Read More</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-12 border-t border-[#58413f]/10 flex flex-col items-center gap-6 px-4 text-center">
+<div class="flex gap-8 mb-4">
+<a class="font-sans text-[10px] uppercase tracking-[0.2em] text-[#c8c6c6] hover:text-[#7b1113] underline underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">The Abyss</a>
+<a class="font-sans text-[10px] uppercase tracking-[0.2em] text-[#c8c6c6] hover:text-[#7b1113] underline underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">The Wire</a>
+<a class="font-sans text-[10px] uppercase tracking-[0.2em] text-[#c8c6c6] hover:text-[#7b1113] underline underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">The Ghost</a>
+</div>
+<p class="font-sans text-[10px] uppercase tracking-[0.2em] text-[#7b1113]">© 1884 ANGEL &amp; THE DEAD COWBOYS. BURIED IN THE DUST.</p>
+</footer>
+<!-- FAB (Only on relevant screens, but we keep it here for home) -->
+<button class="fixed bottom-8 right-8 bg-[#7b1113] text-white h-16 w-16 flex items-center justify-center shadow-2xl transition-all duration-150 active:scale-95 group z-40">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-12 transition-transform" data-icon="confirmation_number">confirmation_number</span>
+</button>
+</body></html>
