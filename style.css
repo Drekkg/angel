@@ -115,7 +115,7 @@ i {
     inset: 0;
     background: linear-gradient(to top, var(--background) 5%, transparent 60%),
                 linear-gradient(to right, rgba(19,19,19,0.8), transparent);
-    filter: grayscale(70%) brightness(0.8);
+    filter: grayscale(0%) brightness(0.8);
 }
   .logo-style { 
     padding: 3px;
