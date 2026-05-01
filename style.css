@@ -136,6 +136,11 @@ i {
    
   }
 
+  #photos > img {
+    max-height: 100vh;
+    max-width: 100%;
+  }
+
 
   .main-container {
     text-align: center;
