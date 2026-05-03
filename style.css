@@ -60,6 +60,11 @@ img {
   text-align: center;
   padding: 2rem 1rem .5rem 1rem;
 }
+
+.copyright {
+  color: #f0e1c2 !important;
+}
+
 .audio {
 
     display: block;
