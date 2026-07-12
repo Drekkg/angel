@@ -65,6 +65,9 @@
           <source src="assets/audio/Preacher_Master.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
+        <button onclick="playAudio()">
+
+        </button>
       </div>
       <div class="audio">
         <h4>I Can't Get Enough</h4>
@@ -233,5 +236,24 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/47ce1b6aad.js" crossorigin="anonymous"></script>
+    <script>
+      const allAudioPlayers = document.querySelectorAll('audio');
+      function onAudioPlay(event) {
+const playingAudio = event.target;
+const title = playingAudio.closest('.audio').querySelector('h4').textContent;
+console.log(`Now Playing "${title}"`)
+allAudioPlayers.forEach(audio => {
+      if (audio !== playingAudio) {
+        audio.pause();
+      }
+    });
+  };
+
+
+      
+allAudioPlayers.forEach(player => {
+  player.addEventListener('play', onAudioPlay);
+})
+    </script>
   </body>
 </html>
